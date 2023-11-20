@@ -67,7 +67,7 @@ driver = webdriver.Chrome(service=service)
 # Load the website
 driver.get('https://www.justwatch.com/uk/provider/netflix/movies')
 
-# Wait for the movies to load (assuming movies are loaded dynamically)
+# Wait for the movies to load
 wait = WebDriverWait(driver, 10)
 wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'title')))
 
